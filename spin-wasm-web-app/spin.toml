@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+name = "wasm-web-app"
+version = "0.1.0"
+authors = ["Marco De Nittis <marco.denittis@gmail.com>"]
+description = "spin-web-app"
+
+[[trigger.http]]
+route = "/"
+component = "wasm-web-app"
+
+[component.wasm-web-app]
+source = "target/wasm32-wasi/release/wasm_web_app.wasm"
+allowed_outbound_hosts = []
+[component.wasm-web-app.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]

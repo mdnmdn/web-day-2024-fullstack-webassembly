@@ -1,0 +1,8 @@
+build:
+  trunk run
+
+run:
+  trunk run
+
+serve:
+  trunk serve

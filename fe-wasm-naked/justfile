@@ -1,0 +1,10 @@
+build:
+   wasm-pack build --target web
+
+serve:
+   miniserve  --index index.html .
+
+build-node:
+   wasm-pack build --target nodejs
+
+

@@ -1,0 +1,4 @@
+build:
+    spin build
+run:
+    spin up --build
