@@ -1,8 +1,7 @@
 build:
-  trunk run
+  trunk build
 
-run:
-  trunk run
+
 
 serve:
   trunk serve

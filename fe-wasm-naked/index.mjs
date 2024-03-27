@@ -4,7 +4,6 @@ async function run() {
   await init();
   greet();
 
-
   // warmup
   fibonacci_wasm(10);
   fibonacci_js(10);

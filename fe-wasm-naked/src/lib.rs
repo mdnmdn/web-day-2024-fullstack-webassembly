@@ -1,7 +1,6 @@
 mod utils;
 
 use wasm_bindgen::prelude::*;
-use log::log;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.

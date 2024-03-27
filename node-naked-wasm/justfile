@@ -2,6 +2,5 @@ build:
    cargo build --target wasm32-unknown-unknown
 
 
-
 run:
    node node-sample.js

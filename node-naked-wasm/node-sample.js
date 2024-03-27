@@ -33,10 +33,11 @@ function fibonacci_js(n) {
 
     const { fibonacci: fibonacci_wasm,  random_range: randomRange } = instance.exports;
 
-    const result = fibonacci_wasm(5 );
-    l(result);
+    const result = fibonacci_wasm(6);
+    l(`fibonacci(6) => ${result}`);
 
-    l(randomRange(4));
+
+    l(`randomRange(4) => {randomRange(4)}`);
 
     l('-------- perfs --------')
 
